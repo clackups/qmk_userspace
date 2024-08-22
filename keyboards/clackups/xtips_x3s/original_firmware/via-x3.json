@@ -6,7 +6,7 @@
   "menus": ["qmk_rgb_matrix"],
   "matrix": {"rows": 4, "cols": 11},
   "layouts": {
-      "keymap": [
+      "LAYOUT_1": [
   [
     {
       "y": 2.5,
