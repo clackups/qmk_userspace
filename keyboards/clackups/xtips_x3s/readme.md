@@ -8,3 +8,7 @@ This is a hack on X.Tips X3S (also known as X3) keyboard, available on Aliexpres
 
 
 The `original_firmware/` folder contains a copy of the vendor's firmware and VIA design JSON.
+
+This mod changes the USB device ID. The origial firmware exposes
+`idVendor=5262, idProduct=4e4b`. This firware exposes `idVendor=5262,
+idProduct=5e4b`.
