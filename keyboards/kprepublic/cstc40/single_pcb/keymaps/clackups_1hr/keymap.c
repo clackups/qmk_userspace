@@ -17,14 +17,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |   1  |   2  |   3  |   N  |   M  |   ,  |  .   |   /  | Enter|  Up  | Tab  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |   0  |      | Space|    Space    |  Alt |Shift |Left  | Down |Right |
+ * |      |      |   0  | WIN  | Space|    Space    |  Alt |Shift |Left  | Down |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [0] = LAYOUT_planck_mit(
     KC_TILD,      KC_7,        KC_8,        KC_9,     KC_Y,    KC_U,     KC_I,     KC_O,     KC_P,     KC_LCBR, KC_RCBR, KC_BSPC,
     _______,      KC_4,        KC_5,        KC_6,     KC_H,    KC_J,     KC_K,     KC_L,     KC_SCLN,  KC_QUOT, OSM(MOD_RCTL), KC_ESC,
     _______,      KC_1,        KC_2,        KC_3,     KC_N,    KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_ENT,  KC_UP,   KC_TAB,
-    _______,   _______,        KC_0,     _______,     LT(1,KC_SPC),  LT(1,KC_SPC),OSM(MOD_RALT),OSM(MOD_RSFT),KC_LEFT,  KC_DOWN, KC_RGHT
+    _______,   _______,        KC_0,     KC_LWIN,     LT(1,KC_SPC),  LT(1,KC_SPC),OSM(MOD_RALT),OSM(MOD_RSFT),KC_LEFT,  KC_DOWN, KC_RGHT
 ),
 
 /* Secondary layer, activated by holding the space key
