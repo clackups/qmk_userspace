@@ -10,13 +10,35 @@ Matias](https://www.billbuxton.com/matias93.html), using the [CSTC40
 keyboard by
 KPrepublic](https://kprepublic.com/products/cstc40-40-rgb-40-hot-swappable-mechanical-keyboard-pcb-programmed-qmk-via-vial-firmware-rgb-switch-underglow-type-c-planck).
 
+The three keys in the bottom row, spannig the space bar (yellow on the
+photo below) are all acting as a space bar and a layer switcher. You
+hold the space bar and tap the keys from the mirrored half (on the
+photo below, Space+L would produce the letter "s", or Ukrainian "de").
+
+The rest of keys on the left are used for digits and tilde. The
+WIN/GUI button is using a cow logo on the photo. Also, the space bar
+turns the digit keys into F keys.
+
+ALT, SHIFT and CTRL are made sticky: you can tap and leave it, and
+proceed with the letter. So, tapping SHIFT, then Space+H will produce
+the capital G or Ukrainian capital "Pe".
+
+The three keys on the left are currently unused. Suggestions are
+welcome.
+
+
 Right-handed layout:
 
-![CSTC40 keyboard for one-handed right-hand typing with hand-written keycap markings for ASCII and Ukrainian](cstc40_clackups_1hr.jpg)
+![CSTC40 keyboard for one-handed right-hand typing with hand-written
+ keycap markings for ASCII and Ukrainian](cstc40_clackups_1hr.jpg)
 
-To build your own keyboard, refer to the [keymap file](keyboards/kprepublic/cstc40/single_pcb/keymaps/clackups_1hr/keymap.c).
+To build your own keyboard, refer to the [keymap
+file](keyboards/kprepublic/cstc40/single_pcb/keymaps/clackups_1hr/keymap.c).
 
 Left-handed layout is coming soon.
+
+
+
 
 ### Parts needed:
 
@@ -66,7 +88,7 @@ qmk config user.overlay_dir=${HOME}/qmk_userspace
 qmk compile -kb kprepublic/cstc40/single_pcb -km clackups_1hr
 ```
 
-5. Flash the firware onto the keyboard
+5. Flash the firmware onto the keyboard
 
 If the compilation finished without errors, disconnect the CSTC40
 keyboard from USB, press and hold the key in the upper left corner,
@@ -78,7 +100,8 @@ the flasher can't connect, repeat the procedure.
 qmk flash -kb kprepublic/cstc40/single_pcb -km clackups_1hr
 ```
 
-6. Use the keyboard at your convenience. All the feedback will be highly apreciated.
+6. Use the keyboard at your convenience. All the feedback will be
+highly apreciated.
 
 
 
@@ -94,6 +117,7 @@ folder](keyboards/clackups/xtips_x3s).
 
 # Copyright and license
 
-This work is published and distributed under the WTFPL license conditions.
+This work is published and distributed under the [WTFPL](LICENSE)
+license conditions.
 
 clackups@gmail.com
