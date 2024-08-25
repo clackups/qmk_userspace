@@ -1,6 +1,6 @@
 /*
   Mirrored keyboard for one-hand typing (right hand).
-  Author: clacups
+  Author: clackups
 
   ALT, SHIFT and CTRL are sticky keys.
  */
