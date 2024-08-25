@@ -42,7 +42,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,     KC_F7,       KC_F8,       KC_F9,     KC_T,    KC_R,     KC_E,     KC_W,     KC_Q,      KC_EQL, KC_HOME,  KC_DEL,
     _______,     KC_F4,       KC_F5,       KC_F6,     KC_G,    KC_F,     KC_D,     KC_S,     KC_A,     KC_MINS,  KC_END,  KC_INS,
     _______,     KC_F1,       KC_F2,       KC_F3,     KC_B,    KC_V,     KC_C,     KC_X,     KC_Z,     _______, KC_PGUP, KC_BACKSLASH,
-    _______,   _______,     _______,     _______,   _______,  _______,            _______,  _______,   _______, KC_PGDN, _______
+    _______,   _______,       DF(2),     _______,   _______,  _______,            _______,  _______,   _______, KC_PGDN, _______
+),
+
+
+/* Mouse control layer, activated by Space+0.
+   Arrow keys in the bottom right corner remain as arrow keys.
+   "0" switches back to default layer.
+ * ,-----------------------------------------------------------------------------------.
+ * |      |      |      |      |      | BTN1 |  UP  | BTN2 | WH-U |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |      |      |      |      | LEFT | DOWN | RIGHT| WH-D |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |      |      |      |      | WH-L |      | WH-R |      |      |  Up  |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |      |  L0  | BTN1 |      |      |      |      |      | Left | Down | Right|
+ * `-----------------------------------------------------------------------------------'
+ */
+[2] = LAYOUT_planck_mit(
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BTN1, KC_MS_U, KC_BTN2, KC_WH_U, XXXXXXX, XXXXXXX, XXXXXXX,
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, XXXXXXX, XXXXXXX, XXXXXXX,
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_WH_L, XXXXXXX, KC_WH_R, XXXXXXX, XXXXXXX,   KC_UP, XXXXXXX,
+    XXXXXXX, XXXXXXX,   DF(0), KC_BTN1, XXXXXXX, XXXXXXX,          XXXXXXX, XXXXXXX, KC_LEFT,  KC_DOWN, KC_RGHT
 ),
 
 

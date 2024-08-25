@@ -26,6 +26,11 @@ ALT, SHIFT and CTRL are made sticky: you can tap and leave it, and
 proceed with the letter. So, tapping SHIFT, then Space+H will produce
 the capital G or Ukrainian capital "Pe".
 
+Space+0 switches the keyboard into the mouse control mode. The "I"
+moves the key up. See the rest of the key actions in the keymap
+file. "0" returns the keyboard into default mode. The arrow keys
+remain with their function for cursor movements.
+
 The three keys on the left are currently unused. Suggestions are
 welcome.
 
@@ -120,7 +125,7 @@ folder](keyboards/clackups/xtips_x3s).
 
 # Copyright and license
 
-This work is published and distributed under the [WTFPL](LICENSE)
-license conditions.
+This work is published and distributed under the [GNU GPL](LICENSE)
+terms and conditions.
 
 clackups@gmail.com
