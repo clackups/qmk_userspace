@@ -10,10 +10,13 @@ Matias](https://www.billbuxton.com/matias93.html), using the [CSTC40
 keyboard by
 KPrepublic](https://kprepublic.com/products/cstc40-40-rgb-40-hot-swappable-mechanical-keyboard-pcb-programmed-qmk-via-vial-firmware-rgb-switch-underglow-type-c-planck).
 
+The layout is still a work in progress, so sugestions are very much
+welcome.
+
 The three keys in the bottom row, spannig the space bar (yellow on the
 photo below) are all acting as a space bar and a layer switcher. You
 hold the space bar and tap the keys from the mirrored half (on the
-photo below, Space+L would produce the letter "s", or Ukrainian "de").
+photo below, Space+L would produce the letter "s", or Ukrainian "i").
 
 The rest of keys on the left are used for digits and tilde. The
 WIN/GUI button is using a cow logo on the photo. Also, the space bar
