@@ -95,3 +95,5 @@ folder](keyboards/clackups/xtips_x3s).
 # Copyright and license
 
 This work is published and distributed under the WTFPL license conditions.
+
+clackups@gmail.com
