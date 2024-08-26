@@ -29,9 +29,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Secondary layer, activated by holding the space key
  * ,-----------------------------------------------------------------------------------.
- * |  F7  |  F8  |  F9  |      |   T  |   R  |   E  |   W  |   Q  |   =  | Home | Del  |
+ * |  F7  |  F8  |  F9  |      |   T  |   R  |   E  |   W  |   Q  |   =  | Ins  | Home |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |  F4  |  F5  |  F6  |      |   G  |   F  |   D  |   S  |   A  |   -  | End  | Ins  |
+ * |  F4  |  F5  |  F6  |      |   G  |   F  |   D  |   S  |   A  |   -  | Del  | End  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |  F1  |  F3  |  F3  |      |   B  |   V  |   C  |   X  |   Z  |      | PgUp |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -39,8 +39,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [1] = LAYOUT_planck_mit(
-    KC_F7,       KC_F8,       KC_F9,   XXXXXXX,  KC_T,    KC_R,     KC_E,     KC_W,     KC_Q,     KC_EQL,  KC_HOME,  KC_DEL,
-    KC_F4,       KC_F5,       KC_F6,   XXXXXXX,  KC_G,    KC_F,     KC_D,     KC_S,     KC_A,     KC_MINS,  KC_END,  KC_INS,
+    KC_F7,       KC_F8,       KC_F9,   XXXXXXX,  KC_T,    KC_R,     KC_E,     KC_W,     KC_Q,     KC_EQL,   KC_INS, KC_HOME,
+    KC_F4,       KC_F5,       KC_F6,   XXXXXXX,  KC_G,    KC_F,     KC_D,     KC_S,     KC_A,     KC_MINS,  KC_DEL,  KC_END,
     KC_F1,       KC_F2,       KC_F3,   XXXXXXX,  KC_B,    KC_V,     KC_C,     KC_X,     KC_Z,     XXXXXXX, KC_PGUP, XXXXXXX,
     XXXXXXX,     DF(2),     XXXXXXX,   XXXXXXX,  XXXXXXX, XXXXXXX,         XXXXXXX,  XXXXXXX,     XXXXXXX, KC_PGDN, XXXXXXX
 ),
