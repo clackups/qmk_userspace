@@ -22,10 +22,17 @@ ALT, SHIFT and CTRL are made sticky: you can tap and leave the key,
 and proceed with the letter. So, tapping SHIFT, then Space+H will
 produce the capital G or Ukrainian capital "Pe".
 
+In addition, long press on the TAB key acts like SHIFT, but it's not
+sticky. So, long-press TAB, Space+U would produce the capital "R" or
+Ukrainian capital "Ka".
+
 Space+0 switches the keyboard into the mouse control mode. The "I" key
-moves the ouse pointer up. See the rest of the key actions in the
-keymap file. "0" returns the keyboard into the default mode. The arrow
-keys remain with their function for cursor movements.
+moves the mouse pointer up. The keys to the left and right from it act
+as mouse buttons. The three keys below are used for navigating the
+mouse pointer to the left, down, and right. In addition, the 5th from
+the right key on the right-handed layout acts as a mouse button. "0"
+returns the keyboard into the default mode. The arrow keys remain with
+their function for cursor movements.
 
 
 Right-handed layout:

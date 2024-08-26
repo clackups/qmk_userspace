@@ -20,3 +20,5 @@ This work is published and distributed under the [GNU GPL](LICENSE)
 terms and conditions.
 
 clackups@gmail.com
+
+Fediverse: [@clackups@social.noleron.com](https://social.noleron.com/@clackups)
