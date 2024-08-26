@@ -13,14 +13,10 @@ KPrepublic](https://kprepublic.com/products/cstc40-40-rgb-40-hot-swappable-mecha
 The layout is still a work in progress, so sugestions are very much
 welcome.
 
-The three keys in the bottom row, spannig the space bar (yellow on the
+The four keys in the bottom row, spannig the space bar (yellow on the
 photo below) are all acting as a space bar and a layer switcher. You
 hold the space bar and tap the keys from the mirrored half (on the
 photo below, Space+L would produce the letter "s", or Ukrainian "i").
-
-The rest of keys on the left are used for digits and tilde. The
-WIN/GUI button is using a cow logo on the photo. Also, the space bar
-turns the digit keys into F keys.
 
 ALT, SHIFT and CTRL are made sticky: you can tap and leave the key,
 and proceed with the letter. So, tapping SHIFT, then Space+H will
@@ -30,9 +26,6 @@ Space+0 switches the keyboard into the mouse control mode. The "I" key
 moves the ouse pointer up. See the rest of the key actions in the
 keymap file. "0" returns the keyboard into the default mode. The arrow
 keys remain with their function for cursor movements.
-
-The three keys on the left are currently unused. Suggestions are
-welcome.
 
 
 Right-handed layout:
