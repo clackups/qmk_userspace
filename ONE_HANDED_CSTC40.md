@@ -34,8 +34,8 @@ acts as a mouse button. "0" returns the keyboard into the default
 mode. The arrow keys remain with their function for cursor movements.
 
 
-On the photo, the right-handed keyboard is on the top, and the
-left-handed one is on the bottom:
+On the photo, the right-handed keyboard is at the top, and the
+left-handed one is at the bottom:
 
 ![CSTC40 keyboard for one-handed typing with hand-written
  keycap markings for ASCII and Ukrainian](cstc40_clackups_1hr_1hl.jpg)
