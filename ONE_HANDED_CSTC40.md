@@ -13,40 +13,44 @@ KPrepublic](https://kprepublic.com/products/cstc40-40-rgb-40-hot-swappable-mecha
 The layout is still a work in progress, so sugestions are very much
 welcome.
 
-The four keys in the bottom row, spannig the space bar (yellow on the
-photo below) are all acting as a space bar and a layer switcher. You
-hold the space bar and tap the keys from the mirrored half (on the
-photo below, Space+L would produce the letter "s", or Ukrainian "i").
+The three keys in the bottom row, spannig the double-size space bar
+(yellow and grey on the photo below) are all acting as a space bar and
+a layer switcher. You hold the space bar and tap the keys from the
+mirrored half (on the right-hand keyboard on the photo, Space+L would
+produce the letter "s", or Ukrainian "i").
 
 ALT, SHIFT and CTRL are made sticky: you can tap and leave the key,
-and proceed with the letter. So, tapping SHIFT, then Space+H will
-produce the capital G or Ukrainian capital "Pe".
-
-In addition, long press on the TAB key acts like SHIFT, but it's not
-sticky. So, long-press TAB, Space+U would produce the capital "R" or
-Ukrainian capital "Ka".
+and proceed with the letter. So, tapping SHIFT, then Space+H on the
+right-hand keyboard will produce the capital G or Ukrainian capital
+"Pe".
 
 Space+0 switches the keyboard into the mouse control mode. The "I" key
 moves the mouse pointer up. The keys to the left and right from it act
 as mouse buttons. The three keys below are used for navigating the
-mouse pointer to the left, down, and right. In addition, the 5th from
-the right key on the right-handed layout acts as a mouse button. "0"
-returns the keyboard into the default mode. The arrow keys remain with
-their function for cursor movements.
+mouse pointer to the left, down, and right. In addition, the key to
+the left from double-sized space bar on the right-handed layout (or
+the one to the right from the space bar on the left-handed layout)
+acts as a mouse button. "0" returns the keyboard into the default
+mode. The arrow keys remain with their function for cursor movements.
 
 
-Right-handed layout:
+On the photo, the right-handed keyboard is on the top, and the
+left-handed one is on the bottom:
 
-![CSTC40 keyboard for one-handed right-hand typing with hand-written
- keycap markings for ASCII and Ukrainian](cstc40_clackups_1hr.jpg)
+![CSTC40 keyboard for one-handed typing with hand-written
+ keycap markings for ASCII and Ukrainian](cstc40_clackups_1hr_1hl.jpg)
 
-To build your own keyboard, refer to the [keymap
-file](keyboards/kprepublic/cstc40/single_pcb/keymaps/clackups_1hr/keymap.c).
+The keymap files for the
+[right](keyboards/kprepublic/cstc40/single_pcb/keymaps/clackups_1hr/keymap.c)
+and
+[left](keyboards/kprepublic/cstc40/single_pcb/keymaps/clackups_1hl/keymap.c)
+hands will help if you need to customize it or build your own
+keyboard.
 
-Left-handed layout is coming soon.
 
 
 ## Building it
+
 
 ### Parts needed:
 
@@ -56,7 +60,7 @@ Left-handed layout is coming soon.
   [KPrepublic](https://kprepublic.com/products/cstc40-40-rgb-40-hot-swappable-mechanical-keyboard-pcb-programmed-qmk-via-vial-firmware-rgb-switch-underglow-type-c-planck). Take
   the Kit2 or Kit3 (Kit3 comes with an USB cable).
 
-* A set of XDA keycaps. The one on the photo is using [this
+* A set of XDA keycaps. The top one on the photo is using [this
   set](https://www.aliexpress.com/item/1005006164294060.html), but any
   other full set will work fine.
 
@@ -66,6 +70,8 @@ Left-handed layout is coming soon.
 
 * 0.3 or 0.4mm permanent markers. For example, [edding 8407 cable
   marker](https://www.edding.com/products/edding-8407-cable-marker/).
+
+* corrector pen, in case if you make a mistake in labeling.
 
 
 ### Installation instructions:
@@ -94,6 +100,9 @@ qmk config user.overlay_dir=${HOME}/qmk_userspace
 ```
 # right-handed keymap
 qmk compile -kb kprepublic/cstc40/single_pcb -km clackups_1hr
+
+# left-handed keymap
+qmk compile -kb kprepublic/cstc40/single_pcb -km clackups_1hl
 ```
 
 5. Flash the firmware onto the keyboard
@@ -104,8 +113,11 @@ connect the USB cable, then release the key after a second or two. If
 the flasher can't connect, repeat the procedure.
 
 ```
-# right-handed keymap
+# flash the right-handed keymap
 qmk flash -kb kprepublic/cstc40/single_pcb -km clackups_1hr
+
+# flash the left-handed keymap
+qmk flash -kb kprepublic/cstc40/single_pcb -km clackups_1hl
 ```
 
 6. Use the keyboard at your convenience. All the feedback will be
