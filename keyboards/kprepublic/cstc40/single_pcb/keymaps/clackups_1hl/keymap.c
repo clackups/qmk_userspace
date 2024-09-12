@@ -11,7 +11,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Primary layer
  * ,-----------------------------------------------------------------------------------.
- * |  7   |   8  |   9  |   ~  |   Q  |   W  |   E  |   R  |   T  |   {  |   }  | Bksp |
+ * |  7   |   8  |   9  |   ~  |   Q  |   W  |   E  |   R  |   T  |   [  |   ]  | Bksp |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |  4   |   5  |   6  |  Esc |   A  |   S  |   D  |   F  |   G  |  "   | Enter| Enter|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [0] = LAYOUT_planck_mit(
-    KC_7,        KC_8,      KC_9,  KC_TILD,    KC_Q,    KC_W,     KC_E,     KC_R,     KC_T,   KC_LCBR, KC_RCBR, KC_BSPC,
+    KC_7,        KC_8,      KC_9,  KC_TILD,    KC_Q,    KC_W,     KC_E,     KC_R,     KC_T,   KC_LBRC, KC_RBRC, KC_BSPC,
     KC_4,        KC_5,      KC_6,  KC_ESC,     KC_A,    KC_S,     KC_D,     KC_F,     KC_G,   KC_QUOT, KC_ENT,  KC_ENT,
     KC_1,        KC_2,      KC_3,  KC_TAB,     KC_Z,    KC_X,     KC_C,     KC_V,     KC_B,   OSM(MOD_RSFT), KC_UP, KC_BACKSLASH,
     KC_LWIN,     KC_0, OSM(MOD_LSFT),OSM(MOD_LCTL),OSM(MOD_RALT),LT(1,KC_SPC), LT(1,KC_SPC), LT(1,KC_SPC), KC_LEFT,  KC_DOWN, KC_RGHT
