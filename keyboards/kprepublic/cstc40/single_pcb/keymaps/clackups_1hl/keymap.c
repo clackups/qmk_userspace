@@ -15,16 +15,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |  4   |   5  |   6  |  Esc |   A  |   S  |   D  |   F  |   G  |  "   | Enter| Enter|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |  1   |   2  |   3  | Tab  |   Z  |   X  |   C  |   V  |   B  | Shift|  Up  |   \  |
+ * |  1   |   2  |   3  | Tab  |   Z  |   X  |   C  |   V  |   B  |  \   |  Up  | Left |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | WIN  |  0   | Shift| Ctrl | Alt  |    Space    | Space|Space |Left  | Down |Right |
+ * | WIN  |  0   | Shift| Ctrl | Alt  |    Space    | Space|Space |Space | Down |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [0] = LAYOUT_planck_mit(
     KC_7,        KC_8,      KC_9,  KC_TILD,    KC_Q,    KC_W,     KC_E,     KC_R,     KC_T,   KC_LBRC, KC_RBRC, KC_BSPC,
     KC_4,        KC_5,      KC_6,  KC_ESC,     KC_A,    KC_S,     KC_D,     KC_F,     KC_G,   KC_QUOT, KC_ENT,  KC_ENT,
-    KC_1,        KC_2,      KC_3,  KC_TAB,     KC_Z,    KC_X,     KC_C,     KC_V,     KC_B,   OSM(MOD_RSFT), KC_UP, KC_BACKSLASH,
-    KC_LWIN,     KC_0, OSM(MOD_LSFT),OSM(MOD_LCTL),OSM(MOD_RALT),LT(1,KC_SPC), LT(1,KC_SPC), LT(1,KC_SPC), KC_LEFT,  KC_DOWN, KC_RGHT
+    KC_1,        KC_2,      KC_3,  KC_TAB,     KC_Z,    KC_X,     KC_C,     KC_V,     KC_B,   KC_BSLS, KC_UP, KC_LEFT,
+    KC_LWIN,     KC_0, OSM(MOD_LSFT),OSM(MOD_LCTL),OSM(MOD_RALT),LT(1,KC_SPC), LT(1,KC_SPC), LT(1,KC_SPC), LT(1,KC_SPC),  KC_DOWN, KC_RGHT
 ),
 
 /* Secondary layer, activated by holding the space key
@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |  F4  |  F5  |  F6  |      |   ;  |   L  |   K  |   J  |   H  |   -  | Del  | End  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |  F1  |  F3  |  F3  |      |   /  |   .  |   ,  |   M  |   N  |      | PgUp |  \   |
+ * |  F1  |  F3  |  F3  |      |   /  |   .  |   ,  |   M  |   N  |  \   | PgUp |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |      |      |      |      |      | PgDn |      |
  * `-----------------------------------------------------------------------------------'
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [1] = LAYOUT_planck_mit(
     KC_F7,       KC_F8,       KC_F9,   XXXXXXX,  KC_P,    KC_O,     KC_I,     KC_U,     KC_Y,     KC_EQL,   KC_INS, KC_HOME,
     KC_F4,       KC_F5,       KC_F6,   XXXXXXX,  KC_SCLN, KC_L,     KC_K,     KC_J,     KC_H,     KC_MINS,  KC_DEL,  KC_END,
-    KC_F1,       KC_F2,       KC_F3,   XXXXXXX,  KC_SLSH, KC_DOT,   KC_COMM,  KC_M,     KC_N,     XXXXXXX, KC_PGUP, KC_NUBS,
+    KC_F1,       KC_F2,       KC_F3,   XXXXXXX,  KC_SLSH, KC_DOT,   KC_COMM,  KC_M,     KC_N,     KC_NUBS, KC_PGUP, XXXXXXX,
     XXXXXXX,     DF(2),     XXXXXXX,   XXXXXXX,  XXXXXXX, XXXXXXX,         XXXXXXX,  XXXXXXX,     XXXXXXX, KC_PGDN, XXXXXXX
 ),
 
