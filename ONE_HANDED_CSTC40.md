@@ -13,7 +13,7 @@ KPrepublic](https://kprepublic.com/products/cstc40-40-rgb-40-hot-swappable-mecha
 The layout is still a work in progress, so sugestions are very much
 welcome.
 
-The three keys in the bottom row, spannig the double-size space bar
+The four keys in the bottom row, spannig the double-size space bar
 (yellow and grey on the photo below) are all acting as a space bar and
 a layer switcher. You hold the space bar and tap the keys from the
 mirrored half (on the right-hand keyboard on the photo, Space+L would
