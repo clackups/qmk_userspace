@@ -46,6 +46,9 @@
   * Fn with Q, W, E, A are equivalent to the symbol keys from the
   right side of keyboard.
 
+  * Fn+Z is mapped to non-US backslash (Ge in Ukrainian layout for
+  Windows).
+
   * Space+TAB switches the keyboard to cursor and mouse control mode:
   WASD for cursor movement, R-F for page up and down, YGHJ for mouse
   movements, T and U for mouse clicks, I-K and B-M for
@@ -55,6 +58,9 @@
   -------------------
 
   * Space+Backspace is equivalent to Esc key.
+
+  * Space+Backslash is mapped to non-US backslash. (Ge in Ukrainian
+  layout for Windows).
 
   * Space+Tilde switches to the cursor and mouse control mode, as
   described above.
@@ -76,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         QK_BOOT,               KC_F1,   KC_F2,     KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12, XXXXXXX, KC_DEL,
         XXXXXXX,               KC_BSLS, KC_RBRC, KC_LBRC, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PSCR, KC_SCRL, KC_PAUS,  KC_GRV,
         KC_ENT,                KC_QUOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX, XXXXXXX,
-        XXXXXXX, XXXXXXX,      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX, KC_PGUP, XXXXXXX,
+        XXXXXXX, XXXXXXX,      KC_NUBS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX, KC_PGUP, XXXXXXX,
         XXXXXXX, XXXXXXX,      XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX,  KC_END, KC_PGDN, KC_HOME
     ),
 	[2] = LAYOUT_all(
