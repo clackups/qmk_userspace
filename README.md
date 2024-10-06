@@ -4,6 +4,8 @@
 
 [CSTC40 planck keyboard redesigned for one-handed input](ONE_HANDED_CSTC40.md).
 
+[YMDK YD60MQ, optimized for one-handed input](keyboards/ymdk/yd60mq/keymaps/claclups_mirrored/keymap.c).
+
 
 ## Reverse-engineered X.Tips X3S (aka X3)
 
