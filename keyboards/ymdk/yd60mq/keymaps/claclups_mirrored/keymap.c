@@ -52,10 +52,14 @@
   * Space+TAB switches the keyboard to cursor and mouse control mode:
   WASD for cursor movement, R-F for page up and down, YGHJ for mouse
   movements, T and U for mouse clicks, I-K and B-M for
-  scrolling. Tapping Fn or Space returns it to the normal mode.
+  scrolling. Tapping Esc sends the "Ctrl-Alt-Del" combination. Tapping
+  Fn or Space returns it to the normal mode.
 
   Right-handed input:
   -------------------
+
+  * Fn with right Shift, arrows and Del turn into the standard 6-key
+  block (ins-del, home-end, PgUp-PgDn).
 
   * Fn+Enter is equivalent to Tab key.
 
@@ -81,11 +85,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         OSM(MOD_LCTL), KC_LGUI, OSM(MOD_LALT),            MO(1),   LT(2,KC_SPC),  MO(1),         OSM(MOD_RALT), KC_APP,  KC_LEFT,      KC_DOWN, KC_RGHT
     ),
 	[1] = LAYOUT_all(
-        QK_BOOT,               KC_F1,   KC_F2,     KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12, XXXXXXX, KC_DEL,
+        QK_BOOT,               KC_F1,   KC_F2,     KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12, XXXXXXX, XXXXXXX,
         XXXXXXX,               KC_BSLS, KC_RBRC, KC_LBRC, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PSCR, KC_SCRL, KC_PAUS,  KC_GRV,
         KC_ENT,                KC_QUOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX,  KC_TAB,
-        XXXXXXX, XXXXXXX,      KC_NUBS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX, KC_PGUP, XXXXXXX,
-        XXXXXXX, XXXXXXX,      XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX,  KC_END, KC_PGDN, KC_HOME
+        XXXXXXX, XXXXXXX,      KC_NUBS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX,  KC_INS, KC_HOME, KC_PGUP,
+        XXXXXXX, XXXXXXX,      XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX,  KC_DEL,  KC_END, KC_PGDN
     ),
 	[2] = LAYOUT_all(
         XXXXXXX,               KC_0,    KC_9,    KC_8,    KC_7,    KC_6,    KC_5,    KC_4,    KC_3,    KC_2,    KC_1,    XXXXXXX, XXXXXXX,   DF(3), QK_GESC,
@@ -95,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX, XXXXXXX,      XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
     ),
 	[3] = LAYOUT_all(
-        XXXXXXX,               XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+        LALT(LCTL(KC_DEL)),    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         XXXXXXX,               XXXXXXX, KC_UP,   XXXXXXX, KC_PGUP, KC_BTN1, KC_MS_U, KC_BTN2, KC_WH_U, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         XXXXXXX,               KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         XXXXXXX, XXXXXXX,      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_WH_L, XXXXXXX, KC_WH_R, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   KC_UP, XXXXXXX,
