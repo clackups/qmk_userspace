@@ -1,5 +1,11 @@
 # Mirrored keyboard for one-handed input
 
+**WARNING:** Starting November 2024, KPrepublic started selling a
+    different model of the keyboard under the same name, so this
+    firmware would not work on it. As of today, no replacement or
+    solution is found.
+
+
 ## Overview
 
 The goal of the project is to build an inexpensive keyboard for

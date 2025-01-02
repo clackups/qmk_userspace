@@ -2,7 +2,8 @@
 
 ## Mirrored keyboard for one-handed input
 
-* **[CSTC40 planck keyboard](ONE_HANDED_CSTC40.md)**, redesigned for one-handed input.
+* **[CSTC40 planck keyboard (before November
+    2024)](ONE_HANDED_CSTC40.md)**, redesigned for one-handed input.
 
 * **YMDK YD60MQ**, optimized for one-handed input: [description in
   Ukrainian](YMDK_YD60MQ_one-handed_layout_Ukrainian.pdf),
